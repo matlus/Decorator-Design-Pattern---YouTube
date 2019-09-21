@@ -94,7 +94,7 @@ namespace DecoratorDesignPattern
             return DecorateWithWatermark(_thumbnailer.GenerateThumbnail(), _watermarkImage);
         }
 
-        public static Image DecorateWithWatermark(Image primaryImage, Image watermarkImage)
+        private static Image DecorateWithWatermark(Image primaryImage, Image watermarkImage)
         {
             using (Graphics imageGraphics = Graphics.FromImage(primaryImage))
             {
